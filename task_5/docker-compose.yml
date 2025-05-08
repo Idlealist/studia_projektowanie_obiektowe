@@ -1,0 +1,13 @@
+services:
+  server:
+    build: ./server
+    image: idlealist/ebiznes_05_backend
+    ports:
+      - "8080:8080"
+  client:
+    build: ./client
+    image: idlealist/ebiznes_05_frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - server
