@@ -73,3 +73,20 @@ pomocą React hooks
 kliencką na dockerze via docker-compose
 
 :white_check_mark: 5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS
+
+**Zadanie 6** Zapaszki
+
+:white_check_mark: 3.0 Należy dodać eslint w hookach gita
+
+:white_check_mark: 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
+aplikacji klienckiej)
+
+:white_check_mark: 4.0 Należy wyeliminować wszystkie zapaszki w kodzie w Sonarze (kod
+aplikacji klienckiej)
+
+:white_check_mark: 4.5 Należy wyeliminować wszystkie podatności oraz błędy bezpieczeństwa
+w kodzie w Sonarze (kod aplikacji klienckiej)
+
+:white_check_mark: 5.0 Zredukować duplikaty kodu do 0%
+
+[Kod klienta](https://github.com/Idlealist/studia_sonar_client)
