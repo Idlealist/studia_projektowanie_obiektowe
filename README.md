@@ -90,3 +90,20 @@ w kodzie w Sonarze (kod aplikacji klienckiej)
 :white_check_mark: 5.0 Zredukować duplikaty kodu do 0%
 
 [Kod klienta](https://github.com/Idlealist/studia_sonar_client)
+
+**Zadanie 8** Testy ( [Kod](./task_5) )
+
+:white_check_mark: 3.0 Należy stworzyć 30 przypadków testowych w Pythonie w WebDriverze
+
+:white_check_mark: 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 100
+asercji
+
+:x: 4.0 Należy stworzyć testy jednostkowe do wybranego wcześniejszego
+projektu z minimum 100 asercjami
+
+:x: 4.5 Należy dodać testy API, należy pokryć wszystkie endpointy z
+minimum jednym scenariuszem negatywnym per endpoint
+
+:x: 5.0 Należy uruchomić testy funkcjonalne na Browserstacku na urządzeniu
+mobilnym
+
