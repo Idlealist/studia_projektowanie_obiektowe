@@ -1,0 +1,32 @@
+#extend("base"):
+    #export("content"):
+        <h2>Categories</h2>
+        <a href="/categories/create">Create Category</a>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                #if(categories.isEmpty):
+                    <tr><td colspan="2">No categories found.</td></tr>
+                #else:
+                    #for(category in categories):
+                        <tr>
+                            <td>#(category.title)</td>
+                            <td>
+                                <a href="/categories/#(category.id)">View</a> |
+                                <a href="/categories/#(category.id)/edit">Edit</a> |
+                                <form action="/categories/#(category.id)/delete" method="POST" style="display:inline;" onsubmit="return confirm('Delete this category?');">
+                                    <button type="submit">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    #endfor
+                #endif
+            </tbody>
+        </table>
+    #endexport
+#endextend

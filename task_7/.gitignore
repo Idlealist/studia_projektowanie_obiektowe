@@ -1,0 +1,48 @@
+# Swift & Xcode
+.build/
+.swiftpm/
+Packages/
+Package.resolved
+DerivedData/
+xcuserdata/
+*.xcodeproj
+*.xcworkspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+
+# Vapor
+Public/uploads/
+Public/files/
+secrets/
+.env
+.env.*
+
+# Editor/IDE-specific
+.vscode/
+.idea/
+*.sw?
+
+# Temporary files
+*~
+*.swp
+*.swo
+*.tmp
+
+# Binary output
+Run
+.build/**
+
+# Tests output
+*.xctest
+
+# SwiftPM resource bundles
+.bundle/
+
+# Linux
+*.dSYM/

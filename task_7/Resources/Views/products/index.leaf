@@ -1,0 +1,36 @@
+#extend("base"):
+    #export("content"):
+        <h2>Products</h2>
+        <a href="/products/create">Create Product</a>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Tag</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                #for(product in products):
+                    <tr>
+                        <td>#(product.name)</td>
+                        <td>#(product.description)</td>
+                        <td>#(product.price)</td>
+                        <td>#(product.category.title)</td>
+                        <td>#(product.tag.label)</td>
+                        <td>
+                            <a href="/products/#(product.id)">View</a>
+                            <a href="/products/#(product.id)/edit">Edit</a>
+                            <form action="/products/#(product.id)/delete" method="POST" style="display:inline" onsubmit="return confirm('Are you sure you want to delete this product?');">
+                                <button type="submit">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                #endfor
+            </tbody>
+        </table>
+    #endexport
+#endextend

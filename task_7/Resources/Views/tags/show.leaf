@@ -1,0 +1,12 @@
+#extend("base"):
+    #export("content"):
+        <h2>#(tag.label)</h2>
+        <h3>Products</h3>
+        <ul>
+            #for(product in tag.products):
+                <li>#(product.name)</li>
+            #endfor
+        </ul>
+        <a href="/tags">Back to List</a>
+    #endexport
+</#endextend

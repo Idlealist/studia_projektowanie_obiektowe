@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        nav a { margin-right: 10px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        form { margin-bottom: 20px; }
+        label { display: block; margin: 5px 0; }
+        input, select, textarea { width: 100%; padding: 8px; margin-bottom: 10px; }
+        button { padding: 8px 16px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/products">Products</a>
+        <a href="/categories">Categories</a>
+        <a href="/tags">Tags</a>
+    </nav>
+    #import("content")
+</body>
+</html>

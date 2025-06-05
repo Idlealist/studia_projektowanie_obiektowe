@@ -1,0 +1,28 @@
+#extend("base"):
+#export("content"):
+        <h2>Tags</h2>
+        <a href="/tags/create">Create Tag</a>
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>Label</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                #for(tag in tags):
+                    <tr>
+                        <td>#(tag.label)</td>
+                        <td>
+                            <a href="/tags/#(tag.id)">View</a>
+                            <a href="/tags/#(tag.id)/edit">Edit</a>
+                            <form action="/tags/#(tag.id)/delete" method="POST" style="display:inline" onsubmit="return confirm('Delete this tag?');">
+                                <button type="submit">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                #endfor
+            </tbody>
+        </table>
+#endexport
+#endextend

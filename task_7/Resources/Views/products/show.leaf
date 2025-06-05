@@ -1,0 +1,10 @@
+#extend("base"):
+    #export("content"):
+        <h2>#(product.name)</h2>
+        <p>Description: #(product.description)</p>
+        <p>Price: #(product.price)</p>
+        <p>Category: #(product.category.title)</p>
+        <p>Tag: #(product.tag.label)</p>
+        <a href="/products">Back to List</a>
+    #endexport
+</#endextend

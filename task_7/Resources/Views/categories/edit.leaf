@@ -1,0 +1,9 @@
+#extend("base"):
+    #export("content"):
+        <h2>Edit Category</h2>
+        <form action="/categories/#(category.id)" method="POST">
+            <label>Title: <input type="text" name="title" value="#(category.title)" required></label>
+            <button type="submit">Update</button>
+        </form>
+    #endexport
+#endextend

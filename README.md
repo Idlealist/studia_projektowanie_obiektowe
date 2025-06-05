@@ -91,7 +91,20 @@ w kodzie w Sonarze (kod aplikacji klienckiej)
 
 [Kod klienta](https://github.com/Idlealist/studia_sonar_client)
 
-**Zadanie 8** Testy ( [Kod](./task_5) )
+**Zadanie 7** Vapor (Swift) ( [Kod](./task_7) )
+
+:white_check_mark: 3.0 Należy stworzyć kontroler wraz z modele Produktów zgodny z CRUD w
+ORM Fluent
+
+:white_check_mark: 3.5 Należy stworzyć szablony w Leaf
+
+:white_check_mark: 4.0 Należy stworzyć drugi model oraz kontroler Kategorii wraz z
+relacją
+
+:x: 4.5 Należy wykorzystać Redis do przechowywania danych
+:x: 5.0 Wrzucić aplikację na heroku
+
+**Zadanie 8** Testy ( [Kod](./task_8) )
 
 :white_check_mark: 3.0 Należy stworzyć 30 przypadków testowych w Pythonie w WebDriverze
 

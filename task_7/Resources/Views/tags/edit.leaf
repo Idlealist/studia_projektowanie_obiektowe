@@ -1,0 +1,9 @@
+#extend("base"):
+    #export("content"):
+        <h2>Edit Tag</h2>
+        <form action="/tags/#(tag.id)" method="POST">
+            <label>Label: <input type="text" name="label" value="#(tag.label)" required>
+            <button type="submit">Update</button>
+        </form>
+    #endexport
+</#endextend

@@ -1,0 +1,16 @@
+#extend("base"):
+    #export("content"):
+        <h2>#(category.title)</h2>
+        <h3>Products</h3>
+        <ul>
+            #if(category.products.isEmpty):
+                <li>No products in this category.</li>
+            #else:
+                #for(product in category.products):
+                    <li>#(product.name)</li>
+                #endfor
+            #endif
+        </ul>
+        <a href="/categories">Back to List</a>
+    #endexport
+#endextend
