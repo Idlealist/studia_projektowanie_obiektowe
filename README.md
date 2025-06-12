@@ -102,6 +102,7 @@ ORM Fluent
 relacją
 
 :x: 4.5 Należy wykorzystać Redis do przechowywania danych
+
 :x: 5.0 Wrzucić aplikację na heroku
 
 **Zadanie 8** Testy ( [Kod](./task_8) )
@@ -120,3 +121,14 @@ minimum jednym scenariuszem negatywnym per endpoint
 :x: 5.0 Należy uruchomić testy funkcjonalne na Browserstacku na urządzeniu
 mobilnym
 
+**Zadanie 9** Mobile first (Android) ( [Kod](./task_9) )
+
+:white_check_mark: 3.0 stworzyć listę kategorii oraz produktów
+
+:white_check_mark: 3.5 dodać widok koszyka
+
+:white_check_mark: 4.0 stworzyć bazę w Realmie
+
+:x: 4.5 dodać płatności w Stripe
+
+:x: 5.0 dodać logowanie i rejestrację via Oauth2
